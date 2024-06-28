@@ -1,0 +1,14 @@
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+header {
+    height: 120px; /* Exemple de hauteur de barre de navigation */
+}
+footer {
+    margin-top: 50px; /* Additional margin if needed */
+}

@@ -1,0 +1,71 @@
+/* Add a green background color to the top navigation */
+.navbar, .navbar-collapse, .navbar-nav, .nav-link {
+    background-color: green !important; /* Couleur verte */
+}
+
+
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    margin-top: 1rem;
+    color: #131111; /* Texte blanc */
+    text-align:center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    border-radius: 15px;
+    box-shadow:
+        inset 2px 2px 3px rgba(14, 13, 13, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(rgb(21, 218, 21), green);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #4CAF50; /* Couleur de fond pour le lien actif */
+    color: white; /* Texte blanc */
+}
+
+
+
+
+.image-navbar {
+    width: 7.5%;
+}
+
+
+.navbar-brand img {
+    height: 120px; /* Ajuster la hauteur du logo selon vos besoins */
+    width: auto;
+    
+
+   
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(9, 8, 8);
+  }
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+
+}
+.navbar-toggler:focus {
+   
+    box-shadow: none;
+    outline: none;
+
+}
+
+
+  .dropdown-menu {
+    background-color: green; /* Set the background color to green */
+}
+

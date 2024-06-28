@@ -1,0 +1,13 @@
+/** Style header **/
+header {
+    height: 120px; /* Exemple de hauteur de barre de navigation */
+}
+
+
+/*body {
+    background-image: url(../images/saisons/printemps.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixe l'image de fond, afin qu'elle reste en place lorsque vous faites défiler la page 
+   
+}*/

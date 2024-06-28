@@ -1,0 +1,24 @@
+footer {
+    color: #333; /* Couleur du texte du footer */
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1300; /* Assure que le footer est au-dessus de tous les autres éléments */
+    bottom: 0; /* Ancre le footer en bas de la fenêtre */
+    width: 100%; /* Assure que le footer s'étend sur toute la largeur */
+    padding: 20px 0; /* Ajout de padding pour le confort visuel */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+
+}
+.footer-spacing {
+    margin-bottom: 60px; /* Ajout d'espace entre les colonnes */
+}
+
+footer a {
+    color:#227d1d; /* Changez cette valeur pour la couleur que vous souhaitez */
+    text-decoration: none; /* Supprime la sous-ligne par défaut */
+}
+
+footer a:hover {
+    color: #11a427; /* Changez cette valeur pour la couleur que vous souhaitez au survol */
+    text-decoration: underline; /* Ajoute une sous-ligne au survol */
+}
+

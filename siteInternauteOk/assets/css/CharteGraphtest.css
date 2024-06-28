@@ -1,0 +1,28 @@
+.container {
+    display: flex; /* Utiliser flexbox */
+    align-items: left; /* Aligner les éléments verticalement */
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.6); /* Set background color to beige */
+}
+body {
+    background-color: rgb(251, 239, 191);
+}
+h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font: weight 500px;
+    
+  }
+p1 {
+    font-family: Arial, sans-serif; /* Changer la police selon vos préférences */
+    font-size: 1.5rem;
+    font-style: normal;
+    font: weight 500px;
+}
+
+/* Applique l'italique à tous les éléments de texte */
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li, span, div {
+    font-style: italic;
+    font-size: 100%;
+}

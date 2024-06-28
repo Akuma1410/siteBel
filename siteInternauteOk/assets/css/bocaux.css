@@ -1,0 +1,432 @@
+/** Style header **/
+header {
+    height: 120px; /* Exemple de hauteur de barre de navigation */
+}
+
+/* Style pour le menu lateral*/
+
+.menu-lateral {
+    height: 100vh;
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 220px;
+    background-color: #227d1d;
+    padding-top: 5px;
+    z-index: 500; /* Make sure it's above other content */
+    display: none; /* Hide by default */
+}
+
+.custom-toggler {
+    margin-top: 80px; /* Ajustez cette valeur selon vos besoins */
+    position: fixed;
+    z-index: 300;
+    border: 2px solid #000; /* Contour noir de 2px */
+    background-color: rgba(34, 125, 29, 0.8); /* Couleur de fond avec transparence */
+    border-radius: 5px; /* Coins arrondis pour un meilleur aspect */
+    padding: 5px; /* Espace intérieur pour le bouton */
+}
+
+.contenu {
+    padding: 20px;
+}
+
+@media (min-width: 992px) { /* lg and above */
+    .menu-lateral {
+        display: block; /* Affichage sur les grands écrans */
+    }
+    .contenu {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .contenu {
+        margin-left: 0; /* Remove margin on small screens */
+    }
+}
+
+
+
+.nav .btn.active {
+    background-color: #444 !important; /* Couleur de fond plus foncée */
+    pointer-events: none; /* Désactive les événements de clic */
+    cursor: default; /* Curseur par défaut */
+    opacity: 0.6; /* Opacité réduite pour indiquer qu'il est inactif */
+}
+
+/* Couleur de fond du menu sur petit écran */
+.offcanvas {
+    background-color: #227d1d; /* Changer la couleur du fond du menu sur petit écran */
+}
+
+/* Couleur du texte du menu sur petit écran */
+.offcanvas .nav-link {
+    color: #fff; /* Changer la couleur du texte du menu sur petit écran */
+}
+
+
+/* Style pour le jumbotron */
+
+.custom-bg {
+    background-color: #227d1d; /* Remplacez #yourDesiredColor par la couleur de votre choix */
+}
+
+.centered-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* banderole */
+
+.custom-img {
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    max-width: 300px;
+}
+@media (max-width: 767px) {
+    .img-container {
+        max-width: 250px;
+    }
+}
+
+
+/* Style pour le contenu principal */
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Utilisez une media query pour les écrans plus petits, où la marge gauche sera de 0px */
+@media (max-width: 992px) { /* Modifiez cette valeur en fonction de votre définition d'un "grand écran" */
+    .main-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Affichage 2 par 2 pour les petit ecrant */
+@media (max-width: 767.98px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+}
+
+/* Style pour la barre de recherche */
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.btn-primary {
+    border: 0;
+    padding: 13.5px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    background-color: #227d1d;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.custom-btn {
+    margin-top: -50px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #4faf4a;
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    /* Ajoute de l'espace égal entre les images */
+    align-items: center;
+    /* Aligne les images au centre horizontalement */
+}
+
+.resize-image {
+    width: 80%;
+    /* Ajuste le pourcentage pour que les trois images tiennent sur une ligne */
+    height: auto;
+    /* Maintient le ratio d'aspect de l'image */
+    border: 2px solid #000;
+    /* Ajoute un contour noir de 2 pixels */
+    box-shadow: 0 4px 8px rgba(156, 147, 147, 0.1);
+    /* Ajoute une ombre portée légère */
+}
+
+.image-item {
+    text-align: center;
+    /* Centre le texte du titre */
+    width: 80%;
+    /* Ajuste le pourcentage pour que les trois éléments tiennent sur une ligne */
+    margin: 0 auto;
+    
+}
+
+.image-leg{
+    text-align: center;
+    /* Centre le texte du titre */
+}
+
+
+.bocal-indisponible {
+    position: relative; /* Assurez-vous que la position est relative pour l'effet de superposition */
+}
+
+.bocal-indisponible::after {
+    content: ""; /* Ajoute un pseudo-élément pour l'effet de superposition */
+    position: absolute; /* Position absolue pour couvrir complètement l'image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente pour l'effet de sombre */
+    pointer-events: none; /* Permet aux événements de pointer à travers */
+}
+
+h2 {
+    font-size: 36px;
+    /* Taille de la police */
+    color: #333;
+    /* Couleur du texte */ 
+    text-align: center;
+    /* Centre le texte horizontalement */
+    margin-top: 50px;
+    /* Marge au-dessus du titre */
+    margin-bottom: 3%;
+    /* Marge au-dessous du titre */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+    text-transform: none;
+    /* Assure que le texte est affiché normalement */
+}
+
+
+
+
+.prix {
+    font-size: 10px;
+    /* Taille de la police */
+    color: #333;
+    /* Couleur du texte */
+    text-align: center;
+    /* Centre le texte horizontalement */
+    margin-top: 50px;
+    /* Marge au-dessus du titre */
+    margin-bottom: 3%;
+    /* Marge au-dessous du titre */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+}
+
+.next-title {
+    margin-top: 70px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.next-text{
+    margin-top: 50px;
+}
+
+h3 {
+    text-transform: uppercase;
+    /* Convertit le texte en majuscules */
+    text-align: center;
+    /* Centre le texte horizontalement */
+    margin-top: 20px;
+    /* Marge au-dessus du titre */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+}
+
+h4 {
+    font-size: 20px;
+    /* Taille de la police */
+    color: #227d1d;
+    /* Couleur du texte */
+    text-transform: uppercase;
+    /* Convertit le texte en majuscules */
+    text-align: center;
+    /* Centre le texte horizontalement */
+    margin-top: 20px;
+    /* Marge au-dessus du titre */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+}
+
+h5 {
+    font-size: 20px;
+    /* Taille de la police */
+    color: #333;
+    /* Couleur du texte */
+    margin-top: 20px;
+    /* Marge au-dessus du titre */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+}
+
+
+
+
+/* Styles pour l'onglet */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* Ajoute une bordure en pointillés en bas */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    /* Masque l'onglet par défaut */
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    /* Affiche l'onglet lors du survol */
+}
+
+
+/* Styles pour la fenêtre modale */
+
+.modal {
+    display: none;
+    /* Masquée par défaut */
+    position: fixed;
+    /* Positionnée de manière fixe */
+    z-index: 1;
+    /* Au-dessus de tout le contenu */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Pleine largeur */
+    height: 100%;
+    /* Pleine hauteur */
+    overflow: auto;
+    /* Activer le défilement si nécessaire */
+    background-color: rgb(0, 0, 0);
+    /* Couleur de fond noire */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Avec transparence */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% du haut et centré */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Peut être ajusté selon les besoins */
+    
+}
+
+.custom-modal {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond plus transparent */
+    border: 1px solid #888;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Positionnement de la modale */
+    top: auto;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    /*Taille de la modale*/ 
+    width: auto; /* Taille automatique en fonction du contenu */
+    max-width: 100%; /* Moitié de la largeur de l'image */
+    height: 50%; /* Moitié de la hauteur de l'image */
+    overflow-y: auto; /* Défilement vertical automatique si le contenu dépasse */
+    overscroll-behavior-y: contain; /* Empêcher le défilement de dépasser la fenêtre modale */
+}
+
+
+/* Affichage de la modale au survol de l'image */
+.image-item:hover .custom-modal {
+    display: block;
+}
+
+.custom-modal-content {
+    padding: 10px;
+}
+
+.image-item {
+    position: relative;
+}
+
+.modal-backdrop {
+    display: none !important;
+    /* Ajoute cette ligne pour masquer l'arrière-plan de la modale */
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* Footer */
+
+
+
+@media (min-width: 992px) {
+    .main-footer {
+        margin-left: 220px; /* Décalage du contenu du footer vers la droite uniquement sur les grands écrans */
+    }
+    .footer-fin {
+        margin-left: 150px;
+    }
+}
